@@ -25,10 +25,37 @@ var swiper = new Swiper(".bestSelling-swiper", {
         },
         1024: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 30,
         }
     },
 });
+
+var swiper = new Swiper(".bestSelling-swipers", {
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        }
+    },
+});
+
 
 const description = document.querySelectorAll('.descripion')
 console.log(description)
@@ -44,3 +71,83 @@ description.forEach((p) => {
     })
 });
 
+
+var swiper = new Swiper(".productDetails", {
+    slidesPerView: 4,
+    loop: true,
+    freeMode: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        520: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        }
+    },
+});
+
+var swiper = new Swiper(".productSlider", {
+    slidesPerView: 4,
+    loop: true,
+    freeMode: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 05,
+        },
+        520: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        }
+    },
+});
+
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 16,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 20500,
+    autoplayHoverPause: false,
+    slideTransition: 'linear',
+    padding: 0,
+    responsive: {
+        0: {
+            items: 1,
+            margin: 10,
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+})
