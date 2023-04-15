@@ -1,34 +1,16 @@
 var swiper = new Swiper(".hero-swiper", {
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4500,
+    autoplaySpeed: 4500,
+    autoplayHoverPause: false,
+    slideTransition: 'linear',
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
 });
 
-var swiper = new Swiper(".bestSelling-swiper", {
-    loop: true,
-    freeMode: true,
-    slidesPerView: 3,
-    spaceBetween: 20,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        }
-    },
-});
 
 var swiper = new Swiper(".bestSelling-swipers", {
     loop: true,
@@ -128,13 +110,16 @@ var swiper = new Swiper(".productSlider", {
     },
 });
 
+
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 16,
     nav: false,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 20500,
+
+    autoplaySpeed: 20000,
+    smartSpeed: 20000,
     autoplayHoverPause: false,
     slideTransition: 'linear',
     padding: 0,

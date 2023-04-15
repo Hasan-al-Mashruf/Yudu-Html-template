@@ -177,13 +177,16 @@
     <section class="countertops mt-2 granite">
         <div class="container px-md-5">
             <div class="position-relative">
-                <img src="/assets/images/Countertops.jpg" alt="" class="w-100">
+                <img src="/assets/images/Tile.jpg" alt="" class="w-100">
                 <div class="overlay position-absolute"></div>
                 <div class="content position-absolute">
-                    <h3 class="mb-3">Granite</h3>
+                    <h3 class="mb-3">Subway</h3>
                     <p>Our dedication and commitment to customer service remains as strong as ever and the core of our
                         business and our culture.</p>
-                    <span>Quartz</span>
+                    <span>Tub/Floor tile</span>
+                    <br>
+                    <br>
+                    <span>Large Format</span>
                 </div>
             </div>
             <ul class="nav">
@@ -200,25 +203,24 @@
                     <a class="nav-link" href="#">/</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Countertops</a>
+                    <a class="nav-link" href="#">Tile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">/</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Granite</a>
+                    <a class="nav-link active" href="#">Subway</a>
                 </li>
             </ul>
         </div>
     </section>
-
     <!-- sort by -->
-    <section class="sortBy">
+    <section class="sortBy filter">
         <div class="container px-md-5">
             <div class="row align-items-center">
-                <div class="col-lg-10">
-                    <div class="content d-flex justify-content-between flex-wrap">
-                        <div>
+                <div class="col-lg-11">
+                    <div class="content d-flex justify-content-lg-between flex-wrap">
+                        <div class="me-3 me-lg-0">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Application</option>
                                 <option value="1">One</option>
@@ -226,7 +228,7 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="me-3 me-lg-0">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Material</option>
                                 <option value="1">One</option>
@@ -234,7 +236,7 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="me-3 me-lg-0">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Color</option>
                                 <option value="1">One</option>
@@ -242,7 +244,7 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="me-3 me-lg-0">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Shape</option>
                                 <option value="1">One</option>
@@ -250,7 +252,7 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="me-3 me-lg-0">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Size</option>
                                 <option value="1">One</option>
@@ -258,7 +260,7 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="me-3 me-lg-0">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Brand</option>
                                 <option value="1">One</option>
@@ -266,7 +268,7 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="me-3 me-lg-0">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Collection</option>
                                 <option value="1">One</option>
@@ -274,7 +276,7 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="me-3 me-lg-0">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Finish</option>
                                 <option value="1">One</option>
@@ -282,7 +284,7 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="me-3 me-lg-0">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Edge</option>
                                 <option value="1">One</option>
@@ -290,7 +292,7 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="me-3 me-lg-0">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Sample</option>
                                 <option value="1">One</option>
@@ -299,10 +301,20 @@
                             </select>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-1">
                     <div class="text-end">
-                        <button class="btn btn-primary">Sort by</button>
+                        <button class="btn btn-warning">Sort by</button>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-3">
+                    <div>
+                        <button class="btn btn-default">Wall <i class="fa fa-close"></i></button>
+                        <button class="btn btn-default">Glass <i class="fa fa-close"></i></button>
+                        <button class="btn btn-default">Taupe <i class="fa fa-close"></i></button>
+                        <button class="btn btn-default">0.5 X 1<i class="fa fa-close"></i></button>
+                        <button class="btn btn-secondary">Clear all</button>
                     </div>
                 </div>
             </div>
@@ -314,7 +326,7 @@
     <section class="granite-product">
         <div class="container px-md-5">
             <div class="title">
-                <h3 class="fw-normal">Level 1 Granite</h3>
+                <h3 class="fw-normal">Subway Tile</h3>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3">
@@ -418,112 +430,6 @@
         </div>
     </section>
 
-    <section class="granite-product">
-        <div class="container px-md-5">
-            <div class="title">
-                <h3 class="fw-normal">Level 2 Granite</h3>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3">
-                    <div class="content">
-                        <img src="/assets/images/Frame 68.png" alt="" class="w-100">
-                        <div class="mt-4">
-                            <h4 class="mb-3">Product Name 01</h4>
-                            <p title="Our dedication and commitment to customer service remains as strong as ever and the core
-                            of our business and our culture." class="descripion">Our dedication and commitment to
-                                customer service remains as strong as ever and the core of our business and our culture.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="content">
-                        <img src="/assets/images/Frame 68.png" alt="" class="w-100">
-                        <div class="mt-4">
-                            <h4 class="mb-3">Product Name 02</h4>
-                            <p title="Our dedication and commitment to customer service remains as strong as ever and the core
-                            of our business and our culture." class="descripion">Our dedication and commitment to
-                                customer service remains as strong as ever and the core of our business and our culture.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="content">
-                        <img src="/assets/images/Frame 68.png" alt="" class="w-100">
-                        <div class="mt-4">
-                            <h4 class="mb-3">Product Name 03</h4>
-                            <p title="Our dedication and commitment to customer service remains as strong as ever and the core
-                            of our business and our culture." class="descripion">Our dedication and commitment to
-                                customer service remains as strong as ever and the core of our business and our culture.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="content">
-                        <img src="/assets/images/Frame 68.png" alt="" class="w-100">
-                        <div class="mt-4">
-                            <h4 class="mb-3">Product Name 04</h4>
-                            <p title="Our dedication and commitment to customer service remains as strong as ever and the core
-                            of our business and our culture." class="descripion">Our dedication and commitment to
-                                customer service remains as strong as ever and the core of our business and our culture.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="content">
-                        <img src="/assets/images/Frame 68.png" alt="" class="w-100">
-                        <div class="mt-4">
-                            <h4 class="mb-3">Product Name 05</h4>
-                            <p title="Our dedication and commitment to customer service remains as strong as ever and the core
-                            of our business and our culture." class="descripion">Our dedication and commitment to
-                                customer service remains as strong as ever and the core of our business and our culture.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="content">
-                        <img src="/assets/images/Frame 68.png" alt="" class="w-100">
-                        <div class="mt-4">
-                            <h4 class="mb-3">Product Name 06</h4>
-                            <p title="Our dedication and commitment to customer service remains as strong as ever and the core
-                            of our business and our culture." class="descripion">Our dedication and commitment to
-                                customer service remains as strong as ever and the core of our business and our culture.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="content">
-                        <img src="/assets/images/Frame 68.png" alt="" class="w-100">
-                        <div class="mt-4">
-                            <h4 class="mb-3">Product Name 07</h4>
-                            <p title="Our dedication and commitment to customer service remains as strong as ever and the core
-                            of our business and our culture." class="descripion">Our dedication and commitment to
-                                customer service remains as strong as ever and the core of our business and our culture.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="content">
-                        <img src="/assets/images/Frame 68.png" alt="" class="w-100">
-                        <div class="mt-4">
-                            <h4 class="mb-3">Product Name 08</h4>
-                            <p title="Our dedication and commitment to customer service remains as strong as ever and the core
-                            of our business and our culture." class="descripion">Our dedication and commitment to
-                                customer service remains as strong as ever and the core of our business and our culture.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!-- footer -->
