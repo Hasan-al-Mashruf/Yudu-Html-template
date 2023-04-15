@@ -1084,7 +1084,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
     }
 
     .navigations .nav-link {
-        padding: 10px;
+        padding: 10px 0px;
     }
 }
 
