@@ -1,8 +1,7 @@
 var swiper = new Swiper(".hero-swiper", {
     loop: true,
     autoplay: true,
-    autoplayTimeout: 4500,
-    autoplaySpeed: 4500,
+    autoplayTimeout: 500,
     autoplayHoverPause: false,
     slideTransition: 'linear',
     navigation: {
