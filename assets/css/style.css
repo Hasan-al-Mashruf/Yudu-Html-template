@@ -21,7 +21,7 @@ h6 {
 }
 
 p {
-    font-style: normal;
+    font-style: normal !important;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -47,6 +47,14 @@ li {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
+}
+
+.my_form ::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #A2A2A2 !important;
 
 }
 
@@ -64,6 +72,10 @@ li {
 .btn-default:hover {
     background: #FEB250;
     color: #fff;
+}
+
+.btn-default:focus {
+    box-shadow: unset !important;
 }
 
 
@@ -169,7 +181,7 @@ body {
     color: #333333 !important;
 }
 
-.navigations .nav-link:hover {
+.nav-link:hover {
     color: #D78C2C !important;
     cursor: pointer;
 }
@@ -302,7 +314,7 @@ body {
 .countertops-categories .content:hover .image {
     object-fit: cover;
     transform: scale(1.1);
-    transition: .6s linear;
+    transition: .6s all ease-in-out;
 }
 
 .categories .content .arrow,
@@ -527,6 +539,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
 
 .popular .content:hover .image {
     border: 1px solid #C9C9C9;
+    border-radius: 5px;
 }
 
 .popular .content .image {
@@ -1045,6 +1058,96 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
 .filter .btn-warning:hover {
     background: #1a1919;
     border: 1px solid #333333;
+
+}
+
+/* contact us page */
+.my_form form label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+
+    color: #262626;
+
+}
+
+.my_form {
+    margin-top: 53px;
+}
+
+.my_form form {
+    margin-top: 56px;
+}
+
+.my_form form .form-control {
+    border: none;
+    border-bottom: 1px solid #8D8D8D;
+    padding: 24px 0 16px;
+    margin-bottom: 32px;
+}
+
+.my_form .btn-default {
+    margin-top: 62px;
+}
+
+.my_form .heading h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.002em;
+    color: #E6AF5D;
+}
+
+.my_form .heading h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    color: #262626;
+    margin: 18px 0;
+}
+
+.my_form .heading p {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: #333333;
+}
+
+.my_form .heading span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: #333333;
+    color: #E6AF5D;
+}
+
+.my_form .content h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #262626;
+}
+
+.my_form .content p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.my_form .content i {
+    margin-right: 28px;
+    font-size: 20px;
+    line-height: 30px;
 
 }
 

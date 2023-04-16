@@ -41,8 +41,11 @@ var swiper = new Swiper(".bestSelling-swipers", {
 const description = document.querySelectorAll('.descripion')
 console.log(description)
 
+
+
 description.forEach((p) => {
     const text = p.textContent.trim().split(" ");
+    console.log(text)
     const truncated = text.slice(0, 5).join(" ");
     console.log(truncated)
     p.textContent = truncated + "...";
