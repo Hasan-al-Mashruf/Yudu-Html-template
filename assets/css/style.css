@@ -291,6 +291,10 @@ body {
     left: 4%;
 }
 
+.categories {
+    overflow-x: hidden;
+}
+
 .categories .title {
     margin: 64px 0 40px;
 }
@@ -310,6 +314,9 @@ body {
     transition: .5s linear;
 }
 
+
+
+
 .categories .content:hover .image,
 .countertops-categories .content:hover .image {
     object-fit: cover;
@@ -322,18 +329,24 @@ body {
     overflow: hidden;
 }
 
-.categories .content .arrow-image,
-.countertops-categories .content .arrow-image {
+.hide {
     position: relative;
-    left: -100%;
-    transition: .1s all linear;
+    left: -200%;
+
 }
 
-.categories .content:hover .arrow-image,
-.countertops-categories .content:hover .arrow-image {
+.show {
     position: relative;
-    left: 5%;
+    left: 10%;
+    transition: .3s linear;
 }
+
+.againhide {
+    position: relative;
+    left: 100%;
+    transition: .3s linear;
+}
+
 
 .categories .content span {
     font-style: normal;
@@ -390,6 +403,7 @@ body {
 .bestSelling {
     padding: 44px 0;
     background: #F8F5F0;
+    overflow-x: hidden;
 }
 
 .bestSelling .content h2 {
@@ -1197,6 +1211,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
 
 .banner .content h3 {
     color: #fff;
+}
+
+.banner img {
+    min-height: 200px;
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 600px) {

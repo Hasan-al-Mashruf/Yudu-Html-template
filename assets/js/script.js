@@ -138,3 +138,28 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+const categoryList = document.querySelectorAll('.categories .content')
+console.log(categoryList)
+
+const clearAll = (arrow) => {
+    arrow.classList.remove('againhide')
+    arrow.classList.add('hide')
+}
+
+categoryList.forEach(category => {
+    const arrow = category.children[1].children[1].children[0].children[0]
+    category.addEventListener('mouseover', () => {
+        arrow.classList.remove('hide')
+        arrow.classList.add('show')
+    })
+
+    category.addEventListener('mouseleave', () => {
+        arrow.classList.remove('show')
+        arrow.classList.add('againhide')
+
+        setTimeout(() => {
+            clearAll(arrow)
+        }, 300)
+    })
+})
