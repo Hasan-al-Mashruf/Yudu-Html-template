@@ -788,7 +788,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
     left: -8px;
 }
 
-.countertops .overlay {
+.countertops .overlay,
+.banner .overlay {
     top: 0;
     left: 0;
     width: 100%;
@@ -1211,6 +1212,20 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
 
 .banner .content h3 {
     color: #fff;
+}
+
+.banner h3 {
+    position: relative;
+}
+
+.banner h3::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    background: #fff;
+    left: 0;
+    bottom: -10px;
 }
 
 .banner img {
