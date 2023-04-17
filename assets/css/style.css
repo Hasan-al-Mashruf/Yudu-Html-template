@@ -1151,6 +1151,54 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
 
 }
 
+/* about us */
+
+.about_us h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    color: #E6AF5D;
+    position: relative;
+    margin: 10px 0 18px;
+}
+
+.about_us h5::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 180px;
+    height: 1px;
+    background: #969696;
+}
+
+.about_us h2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 120%;
+    color: #1F1F1F;
+}
+
+.about_us p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.banner .content {
+    top: 2%;
+    width: 100%;
+    left: 0%;
+    padding: 48px;
+    background: transaprent;
+}
+
+.banner .content h3 {
+    color: #fff;
+}
+
 @media only screen and (max-width: 600px) {
     .featured .content {
         width: 100%;
