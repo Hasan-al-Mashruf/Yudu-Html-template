@@ -315,7 +315,10 @@ body {
     transition: .5s linear;
 }
 
-
+.categories .content img {
+    height: 100%;
+    object-fit: cover;
+}
 
 
 .categories .content:hover .image,
@@ -328,6 +331,10 @@ body {
 .categories .content .arrow,
 .countertops-categories .content .arrow {
     overflow: hidden;
+}
+
+.categories .content .arrow img {
+    width: 85px;
 }
 
 .hide {
@@ -1323,5 +1330,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
 @media only screen and (max-width: 1250px) {
     .bestSelling .swiper-button-next {
         right: -3px;
+    }
+    .categories .content .arrow img {
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .bestSelling .swiper-button-next {
+        right: 5%;
     }
 }
